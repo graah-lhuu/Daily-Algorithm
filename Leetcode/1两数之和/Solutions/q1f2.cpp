@@ -11,4 +11,9 @@ public:
 		}
 		return {};
     }
+
 };
+
+/*
+使用hash map,时间复杂度为O(n)
+*/
