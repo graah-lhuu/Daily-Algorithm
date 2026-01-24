@@ -10,7 +10,7 @@ int partition(int arr[], int low, int high) {
 			i++;
 			swap(arr[i], arr[j]);
 		}
-	}
+	}//此时有三个分区，小于区，大于区，还有基准，所以要将大于区的第一个元素和基准交换位置
 	swap(arr[i + 1], arr[high]);
 	return (i + 1);
 }
@@ -41,3 +41,4 @@ int main(void) {
 	return 0;
 
 }
+
