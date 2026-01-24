@@ -37,6 +37,7 @@ int main(void) {
 	for (int i = 0; i < n; i++) {
 		cout << arr[i] << " ";
 	}
-	delete[] arr;
+	delete[] arr;//必须手动释放内存
 	return 0;
+
 }
