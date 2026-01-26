@@ -40,7 +40,7 @@ void mergeSort(int arr[], int left, int right) {
 	if (left >= right) return;
 	int mid = left + (right - left) / 2;//先做除法，避免溢出
 	mergeSort(arr, left, mid);
-	mergeSort(arr, mid + 1, right);
+	mergeSort(arr, mid + 1, right);//体现了分治思想
 	merge(arr, left, mid, right);
 }
 
@@ -58,4 +58,5 @@ int main(void) {
 	cout << endl;
 	delete[] arr;
 	return 0;
+
 }
